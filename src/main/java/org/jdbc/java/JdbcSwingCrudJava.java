@@ -54,7 +54,7 @@ public class JdbcSwingCrudJava extends JFrame {
 
             Object[] product = new Object[]{name, price, quantity};
             for (int i= 0; i<= product.length-1; i++){
-                System.out.println(product[i].name);
+                System.out.println(product[i]);
             }
 
         }
