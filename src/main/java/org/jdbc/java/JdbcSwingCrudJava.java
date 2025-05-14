@@ -12,6 +12,7 @@ public class JdbcSwingCrudJava extends JFrame {
 
     private JTextField quantityField = new JTextField();
 
+
     Container panel;
 
 
@@ -49,7 +50,12 @@ public class JdbcSwingCrudJava extends JFrame {
         public void actionPerformed(ActionEvent e) {
             String name = nameField.getText();
             int price = Integer.parseInt(priceField.getText());
-            int cantidad = Integer.parseInt(quantityField.getText());
+            int quantity = Integer.parseInt(quantityField.getText());
+
+            Object[] product = new Object[]{name, price, quantity};
+            for (int i= 0; i<= product.length-1; i++){
+                System.out.println(product[i].name);
+            }
 
         }
     }
